@@ -26,10 +26,56 @@ body {
     overflow-y: auto;
     }
 
+@media (max-width: 980px) {
+    .cont {
+        height: auto;
+    }
+}
+
 .cont:before, .cont:after {
     display: table;
     content: '';
     line-height: 0;
 }
 
+.cont:after {
+    clear: both;
+}
 
+.cont--gradient { 
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-image: linear-gradient(47deg, #5672d1 0%, #685ec3 26%, #8d35a5 82%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cont--gradient:before { 
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(-47deg, #5672d1 0%, #685ec3 26%, #8d35a5 82%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+@media (max-width: 980px) {
+    .cont__inn {
+        padding: 4rem;
+        height: auto;
+        padding-right: 6rem;
+    }
+}
+
+.cont__inn { 
+    max-width: 125rem;
+    margin: 0 auto;
+    height: 100%;
+}
