@@ -1,5 +1,35 @@
-
-body {background-color: ghostwhite;
-
-
+html {
+    height: 100%;
+font-size: 62.5%;
 }
+
+head {
+    display: none
+}
+
+.cont {
+    height: auto;
+font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+zoom: 1;
+}
+
+* {box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-family: "Tiempos", Georgia, serif;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    }
+
+.cont:before, .cont:after {
+    display: table;
+    content: '';
+    line-height: 0;
+}
+
+
