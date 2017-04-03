@@ -194,10 +194,10 @@ content__btns {
 }
 
 .quote__cont__inn {
-        overflow: hidden;
+    /* overflow: hidden;
     height: 100%;
     max-height: 100%;
-    overflow-y: auto;
+    overflow-y: auto; */
     display: inline-block;
     width: 100%;
     padding-top: 3.6rem;
@@ -207,13 +207,34 @@ content__btns {
     zoom: 1;
 }
 
+.btn--gradient__text {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}    
+
+.btn {
+    display: inline-block;
+    color: #fff;
+}
+
+.btn--regular {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding: 1.3rem;
+}
+
 .quote__cont__inn__row {
     margin-right: 3rem;
 }
 
 .quote__cont__col {
     width: 50%;
-    float: left;
+    float: right;
+    position: relative;
     padding-right: 3rem;
 }
 
